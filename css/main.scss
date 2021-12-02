@@ -30,7 +30,7 @@ body {
         font-size: 1.2em;
 
         span {
-            font-weight: 600;
+            font-weight: 300;
         }
     }
 
@@ -99,6 +99,8 @@ h2 {
 
 section {
     padding: 5em .5em;
+    // height: 100vh;
+
 }
 
 // Hero
@@ -116,18 +118,20 @@ section {
 
         h1 {
             font-size: 2.5em;
+            font-weight: 300;
             line-height: 1.3em;
             margin-top: 1.2em;
 
             .designing {
                 color: var(--blue-color);
+                font-weight: 600;
             }
 
             .building {
                 color: var(--red-color);
+                font-weight: 600;
             }
         }
-
 
         .primary-cta {
             background: var(--blue-color);
@@ -135,8 +139,7 @@ section {
             text-decoration: none;
             padding: .6em 1.3em;
             font-size: 1.4em;
-            // border-radius: 5em;
-            font-weight: bold;
+            font-weight: 300;
             display: inline-block;
 
             &:hover {
@@ -147,11 +150,14 @@ section {
 
     }
 
+    
+
     .hero-img {
         display: none;
     }
-}
 
+    
+}
 
 
 
@@ -427,7 +433,7 @@ nav {
             color: white;
             background: #046582;
 
-            font-weight: 600;
+            font-weight: 300;
             padding: .5em;
             // margin: 1em;
 
@@ -447,37 +453,41 @@ nav {
     }
 
     section {
-        padding: 5em 2em;
+        padding: 2em 2em;
     }
 
-    .hero .container {
-        display: flex;
+    .hero .hero-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
         justify-content: space-around;
+        // justify-content: space-around;
         text-align: left;
         max-width: 1000px;
 
         .left-col {
-            margin: 3em 3em 0 5em;
+            margin: 1em 1em 0 5em;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            max-width: 330px;
+            min-width: 550px;
 
             h1 {
                 margin: 0;
                 font-size: 46px;
-                width: 90%;
+                // width: 90%;
             }
         }
 
         .right-col {
             display: flex;
             justify-content: center;
-
+            align-items: center;
             // align-items: center;
             .hero-img {
                 display: block;
-                max-width: 300px;
+                max-width: 100%;
+                height: 500px;
             }
         }
 
@@ -503,6 +513,17 @@ nav {
         }
     }
 
+    // 
+   
+    
+
+
+
+
+
+
+
+    // 
 
     .portfolio-section {
         display: flex;
@@ -515,41 +536,22 @@ nav {
             max-width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
-
-
+            
             .card-container {
                 position: relative;
                 .img-container {
                     padding: 20px;
                     position: relative;
-
-                    
-               
-                    img {
-                        width: 320px;
-
-                        transform: scaleX(1);
-                        transition: transform 0.5s ease-in-out;
-                        transform-origin: left;
-                        
-                    }
                 }
 
-                .content {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
+           
         
             }
-
-          
-
-          
-            
-
-
         }
+
+       
+
+        
 
         .portfolio-cta {
             display: block;

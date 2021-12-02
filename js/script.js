@@ -17,3 +17,9 @@ mobileBtnExit.addEventListener('click', () => {
 var date = new Date(); 
 var year = date.getFullYear();
 document.getElementById('currentYear').innerHTML = year;
+
+
+
+
+// 
+// Remove the transition class
